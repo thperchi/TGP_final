@@ -1,0 +1,12 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3"><%= @gossip.user.first_name %> <%= @gossip.user.last_name %></h1>
+        <p class="lead"><%= @gossip.user.city.name %></p>
+        <%= link_to "Profil de l'auteur", user_path(@gossip.user.id), class: "btn btn-secondary"%>
+        <%= link_to "Ville de l'auteur", city_path(@gossip.user.city.id), class: "btn btn-secondary"%>
+        <h2 class="display-4"><%= @gossip.title %></h2>
+        <p class="lead"><%= @gossip.content %></p>
+        <%= link_to "Éditer le potin", edit_gossip_path(@gossip.id), class: "btn btn-primary"%>
+        <%= link_to "Supprimer le potin", gossip_path(@gossip.id), class: "btn btn-primary", method:"DELETE"%>
+    </div>
+</div>

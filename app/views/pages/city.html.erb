@@ -1,0 +1,18 @@
+<div class="hero-image">
+  <div class="hero-text">
+    <h1><%= @city.name %></h1>
+  </div>
+</div>
+<div class="grid">
+  <% @gossips.each do |gossip| %>
+    <div class="card border-dark mb-3" style="max-width: 18rem;">
+      <div class="card-body text-dark">
+        <h5 class="card-title"><%= gossip.user.first_name %> <%= gossip.user.last_name %></h5>
+        <p class="card-text"><%= gossip.title %></p>
+      </div>
+      <div class="card-footer text-muted">
+        <%= link_to 'Aller sur la page', gossip_path(gossip.id), class: "btn btn-primary" %>
+      </div>
+    </div>
+  <% end %>
+</div>
