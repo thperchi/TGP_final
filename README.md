@@ -1,24 +1,18 @@
-# README
+# The Gossip Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ceci est une appli permettant de raconter tous les ragots qui peuvent circuler a THP!
+Elle permet aussi d'ajouter des Tags aux ragots et d'envoyer des messages privés a d'autres utilisateurs.
 
-Things you may want to cover:
+A faire pour lancer l'appli:
 
-* Ruby version
+* ```git clone``` du repo dans votre terminal
 
-* System dependencies
+* Rentrez dans le repo et faire ```bundle install```
 
-* Configuration
+* Tapez la commande ```rails db:migrate```
 
-* Database creation
+* Lancez ```rails db:seed``` pour créer une petite base de donnée de test
 
-* Database initialization
+* Lancez le serveur en tapant ```rails s```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Allez ensuite sur votre navigateur et cherchez ```localhost:3000``` pour parcourir l'appli
